@@ -1,33 +1,34 @@
-.App {
+body {
+  background-color: rgb(255, 255, 255);
+}
+
+
+header {
+  font-size: 30px;
+  margin-top:0px;
+  color: rgb(0, 82, 182);
+  font-family: 'Yellowtail', cursive;
+  
+}
+
+.paragraph{
+  color:rgb(63, 95, 222);
+  font-size: 25px;
+  font-family: 'Roboto', sans-serif;
   text-align: center;
+  margin-top: 75px;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
-  pointer-events: none;
+.name{
+  font-size: 40px;
+  font-family: 'Fjalla One', sans-serif;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+#namebox {
+  height: 6vh;
+  width: 25vw;
+  border-color:black;
+  text-align:center;
+  font-size: 30px;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
