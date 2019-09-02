@@ -23,7 +23,7 @@ class Add extends Component {
                     
                 })
                 .then(response => {
-                    this.props.changeSection();
+                    this.props.changeSection("/api/questions");
                 })
                 .catch(error => {
                     this.setState({error: "Oh no! Theres been an error"})

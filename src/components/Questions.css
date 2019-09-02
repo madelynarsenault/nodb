@@ -1,0 +1,50 @@
+.q1{
+    color:blue;
+    font-family: 'Roboto', sans-serif;
+
+}
+
+.q2{
+    color: blue;
+    font-family: 'Roboto', sans-serif;
+}
+
+.q3{
+    color:blue;
+    font-family: 'Roboto', sans-serif;
+}
+
+.color-card{
+    color:black;
+    font-family: 'Darker Grotesque', sans-serif;
+    display:flex;
+    align-items: center;
+}
+
+
+.country-card{
+    font-family: 'Darker Grotesque', sans-serif;
+    display: flex;
+    align-items: center;
+
+}
+
+.activity-card{
+    font-family: 'Darker Grotesque', sans-serif;
+    display:flex;
+    align-items: center;
+
+
+}
+
+.submit{
+    height: 8vh;
+    width: 25vw;
+    margin-left: 50vw;
+    font-size: 3ch;
+    font-family: 'Darker Grotesque', sans-serif;
+    background-color: transparent;
+    border-color: blue;
+   
+    
+}

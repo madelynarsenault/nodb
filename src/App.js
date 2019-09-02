@@ -3,24 +3,45 @@ import './App.css';
 import Header from "./components/Header";
 import NameBox from "./components/NameBox";
 import Add from "./components/Add";
-
+import Questions from "./components/Questions";
+import Plants from "./components/Plants";
+import Results from "./components/Results";
 
 class App extends React.Component {
   constructor () {
     super()
     this.state ={
-      section: "name"
+      section: "name",
+      view: "nameBox",
+      points: 0
     }
   }
   changeToQuestions = () => {
+    this.setState({
+      view:"questions"
+    })
+  }
+
+  changeToResults = () => {
+    this.setState({
+      view: "results"
+    })
+  }
+  updatePoints = (points) => {
+    let newPoints = this.state.points + points
+    this.setState({
+      points: newPoints
+    })
 
   }
+
+
   render(){
   return (
     <div>
-      {this.state.section === "name" ? (
+      <Header />
+      {this.state.view === "nameBox" ? (
       <main>
-        <Header />
         
         <div className="paragraph">
           <p>
@@ -29,12 +50,15 @@ class App extends React.Component {
             If you'd like to find out, start by entering
           your name below to begin! 
           </p>
-          
-          <NameBox changeSection={() => this.setState({section: "questions"})} />
+          <NameBox changeToQuestions={this.changeToQuestions} /> 
           <Add  />
+
+          {/* <Plants /> */}
           </div>
-        </main>
-      ) : null}
+          </main>
+          ) : this.state.view === "questions" ? 
+        <Questions changeToResults={this.changeToResults} updatePoints={this.updatePoints}
+        /> : <Results totalPoints={this.state.points} />}
       {/* {} */}
        {/* {}  */}
         </div>
