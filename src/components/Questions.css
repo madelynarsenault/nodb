@@ -1,24 +1,25 @@
 .q1{
-    color:blue;
+    color:rgb(252, 194, 93);
     font-family: 'Roboto', sans-serif;
 
 }
 
 .q2{
-    color: blue;
+    color: rgb(252, 194, 93);
     font-family: 'Roboto', sans-serif;
 }
 
 .q3{
-    color:blue;
+    color:rgb(252, 194, 93);
     font-family: 'Roboto', sans-serif;
 }
 
 .color-card{
-    color:black;
+    color: rgb(255, 132, 0);
     font-family: 'Darker Grotesque', sans-serif;
     display:flex;
     align-items: center;
+    justify-content: center;
 }
 
 
@@ -26,13 +27,16 @@
     font-family: 'Darker Grotesque', sans-serif;
     display: flex;
     align-items: center;
-
+    justify-content: center;
+    color:rgb(255, 132, 0);
 }
 
 .activity-card{
     font-family: 'Darker Grotesque', sans-serif;
     display:flex;
     align-items: center;
+    justify-content:center;
+    color: rgb(255, 132, 0);
 
 
 }
@@ -44,7 +48,16 @@
     font-size: 3ch;
     font-family: 'Darker Grotesque', sans-serif;
     background-color: transparent;
-    border-color: blue;
+    border-color: rgb(255, 132, 0);
    
     
+}
+
+.finals{
+    color: rgb(255, 132, 0)
+}
+
+.finalsimg{
+    width:100%;
+    height:auto;
 }

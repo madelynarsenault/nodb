@@ -3,7 +3,7 @@ const plants =[
         name: "Daisy",
         image: 
         "https://pixfeeds.com/images/11/358013/1200-471726916-common-daisy.jpg",
-        description: ""
+        description: "blaj bljabfjbefkbfkwbfkwebf efhkwhfkwejfhwkjefh "
     },
     {
         name: "Cherry Blossom",

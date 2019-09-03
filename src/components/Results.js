@@ -25,14 +25,15 @@ componentDidMount(){
     })
     let plantIndex;
     const {totalPoints} = this.props
-    if (totalPoints <= 15 ){
+    if (totalPoints <= 10 ){
         plantIndex = 0;
-    } else if (totalPoints > 15 && totalPoints < 27 ){
+    } else if (totalPoints > 10 && totalPoints < 15 ){
         plantIndex =1;
     } else {
         plantIndex=2;
         
     }
+    console.log(plantIndex)
     this.setState({index: plantIndex})
 }
 
@@ -41,8 +42,8 @@ componentDidMount(){
         console.log(plants, index)
         return(
             <main>
-                {/* <h1>{plants[index].name}</h1>
-                <img src={plants[index].image}/> */}
+                <h1 className="finals">You got, {plants.length > 0 ? plants[index].name : null}!</h1> 
+                <img className="finalsimg" src={plants.length > 0 ? plants[index].image : null}/> 
             </main>
         )
     }

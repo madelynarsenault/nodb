@@ -43,7 +43,7 @@ class App extends React.Component {
       {this.state.view === "nameBox" ? (
       <main>
         
-        <div className="paragraph">
+        <section className="paragraph">
           <p>
           Welcome to the personality garden! Have you ever wondered what
             kind of plant or flower aligns with you specifically?
@@ -54,7 +54,7 @@ class App extends React.Component {
           <Add  />
 
           {/* <Plants /> */}
-          </div>
+          </section>
           </main>
           ) : this.state.view === "questions" ? 
         <Questions changeToResults={this.changeToResults} updatePoints={this.updatePoints}

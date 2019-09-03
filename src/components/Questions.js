@@ -1,6 +1,8 @@
 import React from 'react';
 import "./Questions.css";
 import Axios from 'axios';
+import Color from './Color'
+import Activity from './Activity';
 
 
 class Questions extends React.Component{
@@ -45,6 +47,8 @@ class Questions extends React.Component{
             }
             ]
         } 
+        this.updateColorPoints = this.updateColorPoints.bind(this);
+        this.updateActivityPoints = this.updateActivityPoints.bind(this);
     }
     updateColorPoints(points){
         this.setState({
@@ -78,17 +82,20 @@ class Questions extends React.Component{
         const viewColors = this.state.colors.map((color, i) => {
             return (
             <div className='color-card'>
-                <h2>{color.color}</h2>
-                <input onChange={() => this.updateColorPoints(color.points)} name="radiothree" type="radio"></input>
+                {/* <h2>{color.color}</h2>
+                 <input onChange={() => this.updateColorPoints(color.points)} name="radiothree" type="radio"></input> */}
+                <Color color={color} updateColorPoints={this.updateColorPoints}/>
             </div>
+
             )
         })
 
         const viewActivities = this.state.activities.map((activity, i)=> {
             return (
                 <div className="activity-card">
-                    <h2>{activity.activity}</h2>
-                    <input onChange ={() => this.updateActivityPoints(activity.points)}name="radiotwo" type="radio"></input>
+                    {/* <h2>{activity.activity}</h2>
+                    <input onChange ={() => this.updateActivityPoints(activity.points)}name="radiotwo" type="radio"></input> */}
+                    <Activity activity={activity} updateActivityPoints={this.updateActivityPoints}/>
                 </div>
             )
         })

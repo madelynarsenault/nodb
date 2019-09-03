@@ -4,9 +4,6 @@ import Axios from "axios";
 class Add extends Component {
     constructor (props) {
         super(props)
-        this.state ={
-            
-        }
         this.handleChange = this.handleChange.bind(this);
     }
 
